@@ -10,6 +10,7 @@
 		332FF4CE0CD169EBD1695AE87748F81F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		3EEE878FEC7CD922D7BD75D93A6221ED /* Pods-AVKitDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CB33E1FAD2A2DCEEEE1E9928A92F9E /* Pods-AVKitDemo-dummy.m */; };
 		5B9F36F5380099F5FDA8327058086FB5 /* Pods-AVKitDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 445738DB294FC17FC75CAE3B9B13574E /* Pods-AVKitDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FC1B4C826B3FFD700439121 /* DefaultRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1B4C726B3FFD700439121 /* DefaultRecorder.swift */; };
 		AA09C02940B53BA6F7B2068552E157E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		AF140435CA26ED5BDAB9B31D1E226DAE /* AKRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DF9726F70337D63E3F0384E20FFAA4 /* AKRecorder.swift */; };
 		B60210685D3DC6F80345B52CE8B47E99 /* AVKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9606BD1EF136067272EAA989AF9CD7 /* AVKit-dummy.m */; };
@@ -35,15 +36,16 @@
 		27996463A81005AB0ADE73BEC739CFC6 /* Pods-AVKitDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AVKitDemo-Info.plist"; sourceTree = "<group>"; };
 		445738DB294FC17FC75CAE3B9B13574E /* Pods-AVKitDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AVKitDemo-umbrella.h"; sourceTree = "<group>"; };
 		50C9DCF1C6D0E6D23436405ABA022F7A /* Pods-AVKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AVKitDemo.release.xcconfig"; sourceTree = "<group>"; };
-		604BD6754744D86C58AC6E123308E860 /* AVKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AVKit.framework; path = AVKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		674483765F677D809EEE6751E7E367D2 /* Pods_AVKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AVKitDemo.framework; path = "Pods-AVKitDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		604BD6754744D86C58AC6E123308E860 /* AVKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AVKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		674483765F677D809EEE6751E7E367D2 /* Pods_AVKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AVKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		779C5722C4665B58A994F8E8BC1C3F36 /* AVKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AVKit.release.xcconfig; sourceTree = "<group>"; };
 		875813EE75D1FF8ACCE4110D09EEF654 /* AVKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AVKit.debug.xcconfig; sourceTree = "<group>"; };
 		89DF9726F70337D63E3F0384E20FFAA4 /* AKRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AKRecorder.swift; path = AVKit/Audio/Recorder/AKRecorder.swift; sourceTree = "<group>"; };
 		9C2937EABF65AD2C33122ACA134372C8 /* AudioRecordProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioRecordProtocol.swift; path = AVKit/Audio/Recorder/AudioRecordProtocol.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B242DF4C702A018E937DE92AFDD48A97 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FC1B4C726B3FFD700439121 /* DefaultRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DefaultRecorder.swift; path = AVKit/Audio/Recorder/DefaultRecorder.swift; sourceTree = "<group>"; };
+		B242DF4C702A018E937DE92AFDD48A97 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B5CB33E1FAD2A2DCEEEE1E9928A92F9E /* Pods-AVKitDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AVKitDemo-dummy.m"; sourceTree = "<group>"; };
 		B940168D0036F09DBD8447BB84C2DFD2 /* AVKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AVKit.modulemap; sourceTree = "<group>"; };
 		C831FAFF3C6DBE1C9673BD0D0E35307A /* AVKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AVKit-Info.plist"; sourceTree = "<group>"; };
@@ -51,7 +53,7 @@
 		DF9606BD1EF136067272EAA989AF9CD7 /* AVKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AVKit-dummy.m"; sourceTree = "<group>"; };
 		E6213BB8A7BFB093197E5584B76841E2 /* Pods-AVKitDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AVKitDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E85C49D1694F9593161CC500F8F37287 /* Pods-AVKitDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AVKitDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		F4328B1F92C09B1684A4556B2FF1A3B4 /* AVKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AVKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F4328B1F92C09B1684A4556B2FF1A3B4 /* AVKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AVKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			children = (
 				89DF9726F70337D63E3F0384E20FFAA4 /* AKRecorder.swift */,
 				9C2937EABF65AD2C33122ACA134372C8 /* AudioRecordProtocol.swift */,
+				9FC1B4C726B3FFD700439121 /* DefaultRecorder.swift */,
 				01FBEF73930CE31CB64F2F9E925A9B40 /* Pod */,
 				A974DB9939CD8E7EB266669209BEE8E0 /* Support Files */,
 			);
@@ -291,6 +294,7 @@
 				AF140435CA26ED5BDAB9B31D1E226DAE /* AKRecorder.swift in Sources */,
 				C875E02934521F43255165A613C4EA92 /* AudioRecordProtocol.swift in Sources */,
 				B60210685D3DC6F80345B52CE8B47E99 /* AVKit-dummy.m in Sources */,
+				9FC1B4C826B3FFD700439121 /* DefaultRecorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
