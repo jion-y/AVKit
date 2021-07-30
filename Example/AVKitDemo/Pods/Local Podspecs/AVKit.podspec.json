@@ -1,0 +1,23 @@
+{
+  "name": "AVKit",
+  "version": "0.0.1",
+  "summary": "iOS 音视频开发中的工具类",
+  "description": "iOS 音视频开发中的工具类",
+  "homepage": "https://github.com/jion-y/AVKit.git",
+  "license": "MIT",
+  "authors": {
+    "liuming": "3165440298@qq.com"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source": {
+    "git": "https://github.com/jion-y/AVKit.git",
+    "tag": "0.0.1"
+  },
+  "source_files": [
+    "AVKit",
+    "AVKit/**/*.{h,m,swift}"
+  ],
+  "exclude_files": "AVKit/Exclude"
+}
