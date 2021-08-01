@@ -8,6 +8,7 @@
 import Foundation
 //音频录制协议，实现改协议的类具有采集音频并写入指定文件的功能
 public protocol AudioRecordEnable {
+    func setAudioFormat(format:AKAuidoFormat)
     func setSavePath(path:String)
     func start()
     func pause()

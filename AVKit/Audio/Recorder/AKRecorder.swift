@@ -70,6 +70,15 @@ public class AKAuidoFormat {
     public var mReserved = 0
 }
 
+extension AKAuidoFormat {
+    public func PCMIsFloat() -> Bool {
+        return self.mBitsPerChannel == 32 ? true : false;
+    }
+    public func IsBigEndian() -> Bool {
+        self.mFormatFlags & kAudioFormatFlagIsBigEndian  == kAudioFormatFlagIsBigEndian ? true: false
+    }
+}
+
 open class AKRecorder {
     static func getRecoder(type:RecorderType)->AudioRecordEnable? {
         return nil
