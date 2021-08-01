@@ -81,6 +81,26 @@ extension AKAuidoFormat {
 
 open class AKRecorder {
     static func getRecoder(type:RecorderType)->AudioRecordEnable? {
-        return nil
+        switch type {
+        case .AVRecoder:
+            return DefaultAudioRecoder()
+        default:
+            return nil
+        }
+    }
+}
+
+extension AKAudioRecordStatus {
+    public func isRecording() -> Bool {
+        return (self == .recording)
+    }
+    public func canRecording() -> Bool {
+        return (self != .recording)
+    }
+    public func isPause() -> Bool {
+        return (self == .pause)
+    }
+    public func canStop() -> Bool {
+        return (self == .recording || self == .pause)
     }
 }
