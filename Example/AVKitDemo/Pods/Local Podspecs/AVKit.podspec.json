@@ -15,9 +15,14 @@
     "git": "https://github.com/jion-y/AVKit.git",
     "tag": "0.0.1"
   },
-  "source_files": [
-    "AVKit",
-    "AVKit/**/*.{h,m,swift}"
-  ],
-  "exclude_files": "AVKit/Exclude"
+  "subspecs": [
+    {
+      "name": "Audio",
+      "source_files": "AVKit/Audio/**/*.{swift}"
+    },
+    {
+      "name": "Uitily",
+      "source_files": "AVKit/Uitily/**/*.{swift}"
+    }
+  ]
 }

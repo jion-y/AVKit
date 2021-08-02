@@ -1,11 +1,12 @@
 //
-//  AudioRecordProtocol.swift
-//  
+//  AKAudioProtocols.swift
+//  AVKit
 //
-//  Created by liuming on 2021/7/30.
+//  Created by liuming on 2021/8/2.
 //
 
 import Foundation
+import AVFoundation
 
 public enum AKAudioRecordStatus {
     case none
@@ -46,3 +47,17 @@ public protocol AudioCaptureEanbel {
     func stop()
     
 }
+
+public protocol AudioWiterEnable {
+    func setSession(session:AVCaptureSession)
+}
+
+public protocol AudioOutputEnable {
+    func addIntputer(inputer:AudioInputEanble)
+    func push(sampleBuffer:CMSampleBuffer)
+}
+public protocol AudioInputEanble {
+    func input(sampleBuffer:CMSampleBuffer)
+}
+
+

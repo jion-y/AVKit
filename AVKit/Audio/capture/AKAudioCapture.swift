@@ -8,7 +8,7 @@
 import Foundation
 import AVFoundation
 
-public class AKAudioUnitCapture:NSObject {
+public class AKAudioCapture :NSObject {
     
     private let session : AVCaptureSession = AVCaptureSession()
     private let dataOutput:AVCaptureAudioDataOutput = AVCaptureAudioDataOutput()
@@ -19,11 +19,10 @@ public class AKAudioUnitCapture:NSObject {
     private var hasConfigSession:Bool = false
     
 }
-extension AKAudioUnitCapture:AudioCaptureEanbel {
+extension AKAudioCapture:AudioCaptureEanbel {
     public func setAudioFormat(format: AKAuidoFormat) {
         self.audioFormat = format
     }
-    
     public func start() {
         if !self.status.canRecording() {
             return
@@ -44,14 +43,12 @@ extension AKAudioUnitCapture:AudioCaptureEanbel {
             self.session.stopRunning()
             self.status = .stop
         }
-        
     }
     
     private func configSession() {
         if self.hasConfigSession {
             return
         }
-        
         guard let audioDevice = AVCaptureDevice.default(for: .audio) else { return  }
         self.hasConfigSession = true
         do {
@@ -68,14 +65,14 @@ extension AKAudioUnitCapture:AudioCaptureEanbel {
             }
             self.session.commitConfiguration()
             
-        } catch let _ {
+        } catch _ {
             
         }
         
 
     }
 }
-extension AKAudioUnitCapture:AVCaptureAudioDataOutputSampleBufferDelegate {
+extension AKAudioCapture:AVCaptureAudioDataOutputSampleBufferDelegate {
     public func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         
     }

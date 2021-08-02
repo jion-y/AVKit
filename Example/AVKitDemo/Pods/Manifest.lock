@@ -1,5 +1,9 @@
 PODS:
-  - AVKit (0.0.1)
+  - AVKit (0.0.1):
+    - AVKit/Audio (= 0.0.1)
+    - AVKit/Uitily (= 0.0.1)
+  - AVKit/Audio (0.0.1)
+  - AVKit/Uitily (0.0.1)
 
 DEPENDENCIES:
   - AVKit (from `../../`)
@@ -9,7 +13,7 @@ EXTERNAL SOURCES:
     :path: "../../"
 
 SPEC CHECKSUMS:
-  AVKit: bb97a2d579393a55831950bebf4affe27e32de12
+  AVKit: cfa645ac8dea2574494432bb1eb4d322320464b4
 
 PODFILE CHECKSUM: c3cf11deffc736302549dc147648fb7dafb5be6e
 
