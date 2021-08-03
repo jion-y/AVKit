@@ -22,6 +22,7 @@ public class ThreadSafeArray<Element> {
         self.init()
         self.array = array
     }
+
     deinit {
         pthread_rwlock_destroy(&lock)
     }
@@ -71,35 +72,35 @@ public extension ThreadSafeArray {
 // MARK: - Immutable
 
 public extension ThreadSafeArray {
-    func first(where predicate: (Element)->Bool)->Element? {
+    func first(where predicate: (Element) -> Bool) -> Element? {
         pthread_rwlock_rdlock(&lock)
         let result = array.first(where: predicate)
         pthread_rwlock_unlock(&lock)
         return result
     }
 
-    func last(where predicate: (Element)->Bool)->Element? {
+    func last(where predicate: (Element) -> Bool) -> Element? {
         pthread_rwlock_rdlock(&lock)
         let result = array.last(where: predicate)
         pthread_rwlock_unlock(&lock)
         return result
     }
 
-    func filter(isIncluded: @escaping (Element)->Bool) ->ThreadSafeArray<Element> {
+    func filter(isIncluded: @escaping (Element) -> Bool) -> ThreadSafeArray<Element> {
         pthread_rwlock_rdlock(&lock)
         let result = array.filter(isIncluded)
         pthread_rwlock_unlock(&lock)
         return ThreadSafeArray(array: result)
     }
 
-    func index(where predicate: (Element)->Bool)-> Int? {
+    func index(where predicate: (Element) -> Bool) -> Int? {
         pthread_rwlock_rdlock(&lock)
         let result = array.firstIndex(where: predicate)
         pthread_rwlock_unlock(&lock)
         return result
     }
 
-    func sorted(by areInIncreasingOrder: (Element, Element)->Bool)->ThreadSafeArray<Element> {
+    func sorted(by areInIncreasingOrder: (Element, Element) -> Bool) -> ThreadSafeArray<Element> {
         pthread_rwlock_rdlock(&lock)
         let result = array.sorted(by: areInIncreasingOrder)
         let newArray = ThreadSafeArray<Element>(array: result)
@@ -107,41 +108,41 @@ public extension ThreadSafeArray {
         return newArray
     }
 
-    func map<T>(_ transform: @escaping (Element)->T) ->[T] {
+    func map<T>(_ transform: @escaping (Element) -> T) -> [T] {
         pthread_rwlock_rdlock(&lock)
         let result = array.map(transform)
         pthread_rwlock_unlock(&lock)
         return result
     }
 
-    func compactMap<T>(_ transform: (Element)->T)->[T] {
+    func compactMap<T>(_ transform: (Element) -> T) -> [T] {
         pthread_rwlock_rdlock(&lock)
         let result = array.compactMap(transform)
         pthread_rwlock_unlock(&lock)
         return result
     }
 
-    func reduce<T>(initialResult: T, _ nexPartialResult: @escaping (T, Element)->T)->T {
+    func reduce<T>(initialResult: T, _ nexPartialResult: @escaping (T, Element) -> T) -> T {
         pthread_rwlock_rdlock(&lock)
         let result = array.reduce(initialResult, nexPartialResult)
         pthread_rwlock_unlock(&lock)
         return result
     }
 
-    func forEach(_ body: (Element)->Void) {
+    func forEach(_ body: (Element) -> Void) {
         pthread_rwlock_rdlock(&lock)
         array.forEach(body)
         pthread_rwlock_unlock(&lock)
     }
 
-    func contains(where predicate: (Element)->Bool)->Bool {
+    func contains(where predicate: (Element) -> Bool) -> Bool {
         pthread_rwlock_rdlock(&lock)
         let result = array.contains(where: predicate)
         pthread_rwlock_unlock(&lock)
         return result
     }
 
-    func allSatisfy(_ predicate: (Element)->Bool)->Bool {
+    func allSatisfy(_ predicate: (Element) -> Bool) -> Bool {
         pthread_rwlock_rdlock(&lock)
         let result = array.allSatisfy(predicate)
         pthread_rwlock_unlock(&lock)
@@ -170,7 +171,7 @@ public extension ThreadSafeArray {
         pthread_rwlock_unlock(&lock)
     }
 
-    func remove(at index: Int, completion: ((Element)->Void)? = nil) {
+    func remove(at index: Int, completion: ((Element) -> Void)? = nil) {
         pthread_rwlock_wrlock(&lock)
         if index > 0, index < count {
             let e = array.remove(at: index)
@@ -179,7 +180,7 @@ public extension ThreadSafeArray {
         pthread_rwlock_unlock(&lock)
     }
 
-    func remove(where predicate: @escaping (Element)->Bool, completion: (([Element])->Void)? = nil) {
+    func remove(where predicate: @escaping (Element) -> Bool, completion: (([Element]) -> Void)? = nil) {
         pthread_rwlock_wrlock(&lock)
         var elements = [Element]()
         while let index = array.firstIndex(where: predicate) {
@@ -189,7 +190,7 @@ public extension ThreadSafeArray {
         pthread_rwlock_unlock(&lock)
     }
 
-    func removeAll(completion: (([Element])->Void)? = nil) {
+    func removeAll(completion: (([Element]) -> Void)? = nil) {
         pthread_rwlock_wrlock(&lock)
         let elements = array
         array.removeAll()
@@ -199,30 +200,28 @@ public extension ThreadSafeArray {
 }
 
 public extension ThreadSafeArray {
-    subscript(index: Int)->Element? {
+    subscript(index: Int) -> Element? {
         get {
             pthread_rwlock_rdlock(&lock)
             var result: Element?
-            guard self.array.startIndex..<self.array.endIndex ~= index else {
+            guard array.startIndex ..< array.endIndex ~= index else {
                 pthread_rwlock_unlock(&lock)
                 return nil
             }
-            
-            result = self.array[index]
+
+            result = array[index]
             pthread_rwlock_unlock(&lock)
             return result
         }
         set {
-            
             guard let newValue = newValue else {
                 return
             }
-            if index < self.count {
+            if index < count {
                 pthread_rwlock_wrlock(&lock)
-                self.array[index] = newValue
+                array[index] = newValue
                 pthread_rwlock_unlock(&lock)
             }
-            
         }
     }
 }
@@ -230,9 +229,9 @@ public extension ThreadSafeArray {
 // MARK: - Equatable
 
 public extension ThreadSafeArray where Element: Equatable {
-    func contains(_ element: Element)->Bool {
+    func contains(_ element: Element) -> Bool {
         pthread_rwlock_rdlock(&lock)
-        let result = self.array.contains(element)
+        let result = array.contains(element)
         pthread_rwlock_unlock(&lock)
         return result
     }
@@ -246,7 +245,7 @@ public extension ThreadSafeArray {
     /// - Parameters:
     ///   - left: The collection to append to.
     ///   - right: The element to append to the array.
-    static func +=(left: inout ThreadSafeArray, right: Element) {
+    static func += (left: inout ThreadSafeArray, right: Element) {
         left.append(right)
     }
 
@@ -255,7 +254,7 @@ public extension ThreadSafeArray {
     /// - Parameters:
     ///   - left: The collection to append to.
     ///   - right: The elements to append to the array.
-    static func +=(left: inout ThreadSafeArray, right: [Element]) {
+    static func += (left: inout ThreadSafeArray, right: [Element]) {
         left.append(right)
     }
 }

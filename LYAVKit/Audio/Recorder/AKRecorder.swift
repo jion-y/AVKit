@@ -5,13 +5,13 @@
 //  Created by liuming on 2021/7/30.
 //
 
-import Foundation
 import AVFoundation
+import Foundation
 
 public enum RecorderType {
-    case  AVRecoder
-    case  AudioQueue
-    case  AudioUint
+    case AVRecoder
+    case AudioQueue
+    case AudioUint
 }
 
 /*
@@ -37,50 +37,50 @@ public enum RecorderType {
  非交错情况为， 左右声道分开存储，每个平面，存单独的声道
  平面1 LLLLLLLL
  平面2 RRRRRRR
- 
+
  */
-public class AKAuidoFormat {
-    
+public class AKAudioFormat {
     /// 采样率
     public var mSampleRate = 44100
-    
+
     /// 数据流格式
-    public var mFormatID:AudioFormatID = kAudioFormatLinearPCM
+    public var mFormatID: AudioFormatID = kAudioFormatLinearPCM
     /// 描述AudioBufferList的格式
-    public var mFormatFlags:AudioFormatFlags = kAudioFormatFlagIsSignedInteger | kAudioFormatFlagIsPacked
-    
+    public var mFormatFlags: AudioFormatFlags = kAudioFormatFlagIsSignedInteger | kAudioFormatFlagIsPacked
+
     /// 每个数据包，包含的采样数
-    public var mFramesPerPacket:UInt32 = 1
-    
-    /*每个数据帧的字节。例如： kAudioFormatFlagIsSignedInteger 16 ， 每个通道 2 byte
+    public var mFramesPerPacket: UInt32 = 1
+
+    /* 每个数据帧的字节。例如： kAudioFormatFlagIsSignedInteger 16 ， 每个通道 2 byte
      交错类型 mBitsPerChannel / 8 * mChannelsPerFrame
      非交错类型 mBitsPerChannel / 8
      */
-    public var mBytesPerFrame:UInt32 = 2
-    
+    public var mBytesPerFrame: UInt32 = 2
+
     /// 描述音频通道的个数。单声道 1， 双声道为 2， 多声道 为 n
-    public var mChannelsPerFrame:UInt32 = 1
+    public var mChannelsPerFrame: UInt32 = 1
     /*
      每个通道的位深 8, 16, 32等。
      kAudioFormatFlagIsSignedInteger 16 ， 每个通道 2 byte
      kAudioFormatFlagIsFloat 32，每个通道 4 byte
      */
-    public var mBitsPerChannel:UInt32 = 16
-    
+    public var mBitsPerChannel: UInt32 = 16
+
     public var mReserved = 0
 }
 
-extension AKAuidoFormat {
-    public func PCMIsFloat() -> Bool {
-        return self.mBitsPerChannel == 32 ? true : false;
+public extension AKAudioFormat {
+    func PCMIsFloat() -> Bool {
+        return mBitsPerChannel == 32 ? true : false
     }
-    public func IsBigEndian() -> Bool {
-        self.mFormatFlags & kAudioFormatFlagIsBigEndian  == kAudioFormatFlagIsBigEndian ? true: false
+
+    func IsBigEndian() -> Bool {
+        mFormatFlags & kAudioFormatFlagIsBigEndian == kAudioFormatFlagIsBigEndian ? true : false
     }
 }
 
-open class AKRecorder {
-    static func getRecoder(type:RecorderType)->AudioRecordEnable? {
+open enum AKRecorder {
+    static func getRecoder(type: RecorderType) -> AudioRecordEnable? {
         switch type {
         case .AVRecoder:
             return DefaultAudioRecoder()
@@ -90,17 +90,20 @@ open class AKRecorder {
     }
 }
 
-extension AKAudioRecordStatus {
-    public func isRecording() -> Bool {
+public extension AKAudioRecordStatus {
+    func isRecording() -> Bool {
         return (self == .recording)
     }
-    public func canRecording() -> Bool {
+
+    func canRecording() -> Bool {
         return (self != .recording)
     }
-    public func isPause() -> Bool {
+
+    func isPause() -> Bool {
         return (self == .pause)
     }
-    public func canStop() -> Bool {
+
+    func canStop() -> Bool {
         return (self == .recording || self == .pause)
     }
 }

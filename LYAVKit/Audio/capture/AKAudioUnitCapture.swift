@@ -6,9 +6,6 @@
 //
 
 import Foundation
-public class AKAudioUnitCapture {
-    
-}
-extension AudioCaptureEanbel {
-    
-}
+public class AKAudioUnitCapture {}
+
+extension AudioCaptureEanbel {}
