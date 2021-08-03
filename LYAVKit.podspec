@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "AVKit"
+  spec.name         = "LYAVKit"
   spec.version      = "0.0.1"
   spec.summary      = "iOS 音视频开发中的工具类"
 
@@ -136,10 +136,10 @@ Pod::Spec.new do |spec|
   # spec.dependency "JSONKit", "~> 1.4"
   
   spec.subspec 'Audio' do |ss|
-    ss.source_files = 'AVKit/Audio/**/*.{swift}'
+    ss.source_files = 'LYAVKit/Audio/**/*.{swift}'
   end
   spec.subspec 'Uitily' do |ss|
-    ss.source_files = 'AVKit/Uitily/**/*.{swift}'
+    ss.source_files = 'LYAVKit/Uitily/**/*.{swift}'
   end
 
 end

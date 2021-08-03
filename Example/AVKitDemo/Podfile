@@ -6,5 +6,14 @@ target 'AVKitDemo' do
   use_frameworks!
 
   # Pods for AVKitDemo
-  pod 'AVKit', :path => '../../'
+  pod 'LYAVKit', :path => '../../'
 end
+
+target 'AVKitDemoTests' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for AVKitDemo
+  pod 'LYAVKit', :path => '../../'
+end
+

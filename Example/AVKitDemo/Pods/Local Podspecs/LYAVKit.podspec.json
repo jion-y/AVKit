@@ -18,11 +18,11 @@
   "subspecs": [
     {
       "name": "Audio",
-      "source_files": "AVKit/Audio/**/*.{swift}"
+      "source_files": "LYAVKit/Audio/**/*.{swift}"
     },
     {
       "name": "Uitily",
-      "source_files": "AVKit/Uitily/**/*.{swift}"
+      "source_files": "LYAVKit/Uitily/**/*.{swift}"
     }
   ]
 }

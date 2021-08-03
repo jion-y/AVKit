@@ -1,20 +1,20 @@
 PODS:
-  - AVKit (0.0.1):
-    - AVKit/Audio (= 0.0.1)
-    - AVKit/Uitily (= 0.0.1)
-  - AVKit/Audio (0.0.1)
-  - AVKit/Uitily (0.0.1)
+  - LYAVKit (0.0.1):
+    - LYAVKit/Audio (= 0.0.1)
+    - LYAVKit/Uitily (= 0.0.1)
+  - LYAVKit/Audio (0.0.1)
+  - LYAVKit/Uitily (0.0.1)
 
 DEPENDENCIES:
-  - AVKit (from `../../`)
+  - LYAVKit (from `../../`)
 
 EXTERNAL SOURCES:
-  AVKit:
+  LYAVKit:
     :path: "../../"
 
 SPEC CHECKSUMS:
-  AVKit: cfa645ac8dea2574494432bb1eb4d322320464b4
+  LYAVKit: 8b6f41f7e77054605b96b3f8f42db207ebd22264
 
-PODFILE CHECKSUM: c3cf11deffc736302549dc147648fb7dafb5be6e
+PODFILE CHECKSUM: 2feb67d8d8a2bad083e4a697de6046ca548ca508
 
 COCOAPODS: 1.10.1

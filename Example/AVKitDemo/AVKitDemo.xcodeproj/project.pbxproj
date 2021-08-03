@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,11 +14,26 @@
 		9FC1B4B926B3F2EF00439121 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FC1B4B726B3F2EF00439121 /* Main.storyboard */; };
 		9FC1B4BB26B3F2F300439121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FC1B4BA26B3F2F300439121 /* Assets.xcassets */; };
 		9FC1B4BE26B3F2F300439121 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FC1B4BC26B3F2F300439121 /* LaunchScreen.storyboard */; };
+		9FDCBCF826B8F47F001AD942 /* AVKitDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDCBCF726B8F47F001AD942 /* AVKitDemoTests.swift */; };
+		9FDCBD0026B917CD001AD942 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDCBCFF26B917CD001AD942 /* Test.swift */; };
+		C0286B1C6A1574929D4A830F /* Pods_AVKitDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F313A2877C1D13C4727EAC5D /* Pods_AVKitDemoTests.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9FDCBCFA26B8F47F001AD942 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FC1B4A626B3F2EF00439121 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FC1B4AD26B3F2EF00439121;
+			remoteInfo = AVKitDemo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		126820FA92D3FD5727D4679B /* Pods-AVKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVKitDemo.release.xcconfig"; path = "Target Support Files/Pods-AVKitDemo/Pods-AVKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		4855DAE4492CA013D2956C32 /* Pods-AVKitDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVKitDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-AVKitDemoTests/Pods-AVKitDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		645C7441EF45C9FA157A429E /* Pods_AVKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AVKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AD6548E41A82E6F5B182002 /* Pods-AVKitDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVKitDemoTests.release.xcconfig"; path = "Target Support Files/Pods-AVKitDemoTests/Pods-AVKitDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		9FC1B4AE26B3F2EF00439121 /* AVKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC1B4B126B3F2EF00439121 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FC1B4B326B3F2EF00439121 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,7 +42,12 @@
 		9FC1B4BA26B3F2F300439121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FC1B4BD26B3F2F300439121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FC1B4BF26B3F2F300439121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FDCBCF526B8F47F001AD942 /* AVKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FDCBCF726B8F47F001AD942 /* AVKitDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVKitDemoTests.swift; sourceTree = "<group>"; };
+		9FDCBCF926B8F47F001AD942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FDCBCFF26B917CD001AD942 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		E14CE3E84CB0679135EB6903 /* Pods-AVKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-AVKitDemo/Pods-AVKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F313A2877C1D13C4727EAC5D /* Pods_AVKitDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AVKitDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +59,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9FDCBCF226B8F47F001AD942 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0286B1C6A1574929D4A830F /* Pods_AVKitDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -46,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				645C7441EF45C9FA157A429E /* Pods_AVKitDemo.framework */,
+				F313A2877C1D13C4727EAC5D /* Pods_AVKitDemoTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -55,8 +84,9 @@
 			children = (
 				E14CE3E84CB0679135EB6903 /* Pods-AVKitDemo.debug.xcconfig */,
 				126820FA92D3FD5727D4679B /* Pods-AVKitDemo.release.xcconfig */,
+				4855DAE4492CA013D2956C32 /* Pods-AVKitDemoTests.debug.xcconfig */,
+				7AD6548E41A82E6F5B182002 /* Pods-AVKitDemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -64,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				9FC1B4B026B3F2EF00439121 /* AVKitDemo */,
+				9FDCBCF626B8F47F001AD942 /* AVKitDemoTests */,
 				9FC1B4AF26B3F2EF00439121 /* Products */,
 				7E099A5266E02B12BE3036FA /* Pods */,
 				23F54E8596028015441A8D37 /* Frameworks */,
@@ -74,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				9FC1B4AE26B3F2EF00439121 /* AVKitDemo.app */,
+				9FDCBCF526B8F47F001AD942 /* AVKitDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,6 +124,16 @@
 			path = AVKitDemo;
 			sourceTree = "<group>";
 		};
+		9FDCBCF626B8F47F001AD942 /* AVKitDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				9FDCBCF726B8F47F001AD942 /* AVKitDemoTests.swift */,
+				9FDCBCFF26B917CD001AD942 /* Test.swift */,
+				9FDCBCF926B8F47F001AD942 /* Info.plist */,
+			);
+			path = AVKitDemoTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,7 +145,7 @@
 				9FC1B4AA26B3F2EF00439121 /* Sources */,
 				9FC1B4AB26B3F2EF00439121 /* Frameworks */,
 				9FC1B4AC26B3F2EF00439121 /* Resources */,
-				47D2FFF2AF7E9472788ED7AC /* [CP] Embed Pods Frameworks */,
+				F4412FAB8EFDA12B0BD1F9E4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -113,6 +155,26 @@
 			productName = AVKitDemo;
 			productReference = 9FC1B4AE26B3F2EF00439121 /* AVKitDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		9FDCBCF426B8F47F001AD942 /* AVKitDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FDCBCFC26B8F47F001AD942 /* Build configuration list for PBXNativeTarget "AVKitDemoTests" */;
+			buildPhases = (
+				24F2B8D02F6867C34C843267 /* [CP] Check Pods Manifest.lock */,
+				9FDCBCF126B8F47F001AD942 /* Sources */,
+				9FDCBCF226B8F47F001AD942 /* Frameworks */,
+				9FDCBCF326B8F47F001AD942 /* Resources */,
+				F99892DAEB942FE0A583E0BE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FDCBCFB26B8F47F001AD942 /* PBXTargetDependency */,
+			);
+			name = AVKitDemoTests;
+			productName = AVKitDemoTests;
+			productReference = 9FDCBCF526B8F47F001AD942 /* AVKitDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -125,6 +187,10 @@
 				TargetAttributes = {
 					9FC1B4AD26B3F2EF00439121 = {
 						CreatedOnToolsVersion = 12.5;
+					};
+					9FDCBCF426B8F47F001AD942 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 9FC1B4AD26B3F2EF00439121;
 					};
 				};
 			};
@@ -142,6 +208,7 @@
 			projectRoot = "";
 			targets = (
 				9FC1B4AD26B3F2EF00439121 /* AVKitDemo */,
+				9FDCBCF426B8F47F001AD942 /* AVKitDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -157,10 +224,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9FDCBCF326B8F47F001AD942 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		47D2FFF2AF7E9472788ED7AC /* [CP] Embed Pods Frameworks */ = {
+		24F2B8D02F6867C34C843267 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AVKitDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4412FAB8EFDA12B0BD1F9E4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -199,6 +295,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F99892DAEB942FE0A583E0BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AVKitDemoTests/Pods-AVKitDemoTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AVKitDemoTests/Pods-AVKitDemoTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AVKitDemoTests/Pods-AVKitDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -212,7 +325,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9FDCBCF126B8F47F001AD942 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FDCBCF826B8F47F001AD942 /* AVKitDemoTests.swift in Sources */,
+				9FDCBD0026B917CD001AD942 /* Test.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FDCBCFB26B8F47F001AD942 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FC1B4AD26B3F2EF00439121 /* AVKitDemo */;
+			targetProxy = 9FDCBCFA26B8F47F001AD942 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9FC1B4B726B3F2EF00439121 /* Main.storyboard */ = {
@@ -390,6 +520,48 @@
 			};
 			name = Release;
 		};
+		9FDCBCFD26B8F47F001AD942 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4855DAE4492CA013D2956C32 /* Pods-AVKitDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q79KRGY3Q9;
+				INFOPLIST_FILE = AVKitDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.match.date.welo.IJkPlayer.AVKitDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AVKitDemo.app/AVKitDemo";
+			};
+			name = Debug;
+		};
+		9FDCBCFE26B8F47F001AD942 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AD6548E41A82E6F5B182002 /* Pods-AVKitDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q79KRGY3Q9;
+				INFOPLIST_FILE = AVKitDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.match.date.welo.IJkPlayer.AVKitDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AVKitDemo.app/AVKitDemo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -407,6 +579,15 @@
 			buildConfigurations = (
 				9FC1B4C326B3F2F300439121 /* Debug */,
 				9FC1B4C426B3F2F300439121 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FDCBCFC26B8F47F001AD942 /* Build configuration list for PBXNativeTarget "AVKitDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FDCBCFD26B8F47F001AD942 /* Debug */,
+				9FDCBCFE26B8F47F001AD942 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

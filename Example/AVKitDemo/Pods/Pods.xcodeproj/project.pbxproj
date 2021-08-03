@@ -3,126 +3,143 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		032B60C2675F7297770972681BE4A881 /* AKAudioCaptureRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C2BC7DC0DD070E54BF9ADAD7227A05 /* AKAudioCaptureRecorder.swift */; };
-		1BCB66F00C2072F13CE92E4E71716DDD /* AKAudioUnitCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E5EE7DB6D846EA4971B1DE88A893B7 /* AKAudioUnitCapture.swift */; };
-		27408B81060019A50C8108AC992668A7 /* AKAudioCaptureSessionWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B660AA826014AAF599E2FD521DEE08FA /* AKAudioCaptureSessionWriter.swift */; };
-		315BDC9751D4F0CAD854A11980389049 /* AKAudioProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A142F9913682ABDD39692B72557C15 /* AKAudioProtocols.swift */; };
-		332FF4CE0CD169EBD1695AE87748F81F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		3EEE878FEC7CD922D7BD75D93A6221ED /* Pods-AVKitDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CB33E1FAD2A2DCEEEE1E9928A92F9E /* Pods-AVKitDemo-dummy.m */; };
-		5B9F36F5380099F5FDA8327058086FB5 /* Pods-AVKitDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 445738DB294FC17FC75CAE3B9B13574E /* Pods-AVKitDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D97CA686131668C50C34219B6DAAE05 /* AVKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8A5D9E3ABBA04FB2FA72E815E765B47 /* AVKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8B8CEC6BBFA421989B6CAF2F434FBC72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		9742462A25045832EAD9E92F64E68B10 /* AVKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A53F3B9CDE063D8553485F5E6D63E0A5 /* AVKit-dummy.m */; };
-		9941F3868E8D6F55FE9ABD43449ABDB4 /* DefaultRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083F948453D6A9C4B2402BEB8EEB76BE /* DefaultRecorder.swift */; };
-		BA6A3FBF685508224986C546677D6D87 /* ThreadSafeArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CEE5BA0101C5CF30BFDD8916B8C1BF /* ThreadSafeArray.swift */; };
-		C3B462AFAE562037892DD4BF4245C98F /* AKAudioCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5456646AA6CCD445129571C162B4D051 /* AKAudioCapture.swift */; };
-		E35D63C80971D42E68C78859A16CFC98 /* AKRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3738C92D32B497417664B2A23D8D465B /* AKRecorder.swift */; };
+		3282184A588B45668BC67595062D52F0 /* LYAVKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5C2B9DBA72A7DDDD032F23D45B5F6D /* LYAVKit-dummy.m */; };
+		387F604612AA4C47AC7B286536DF2DBC /* AKAudioProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123FDF6DE8F481B454FB7B0FCC263956 /* AKAudioProtocols.swift */; };
+		3895203D5CF4241B7D6EC45E3518CDBE /* DefaultRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD76CF631592401FD00A3FA014D65DA8 /* DefaultRecorder.swift */; };
+		561D951DF51452E4C30FD40A707DD2C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		693CD5CD18A6E1D0E68E2A2D96F7F54C /* Pods-AVKitDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE14AFAEED22CEEDC7098B918891ED47 /* Pods-AVKitDemo-dummy.m */; };
+		6C5D3CE94D72CA2D31EC8E408DFA52DD /* Pods-AVKitDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0755686EC2ACE520F914132D691327A /* Pods-AVKitDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7181CFA951CC6E38296F8267C1233274 /* AKRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24ED68849C71EC5A8CDD59CDA649D99 /* AKRecorder.swift */; };
+		7F007E15387D4A2EEDA5800540F664F3 /* ThreadSafeArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1B086FD3EE3A041890D3948626222D /* ThreadSafeArray.swift */; };
+		8727C3F13BE0D5A2C1FEFD8051C5F5CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A3C6C4E38121B08C7F1145CF7A298134 /* LYAVKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E04A4DA80FF67D8846D0D11202E0925 /* LYAVKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A444164587BBD679604E9019A55F6CFC /* AKAudioCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67B645CB5410634F8F5E977A2E73B91 /* AKAudioCapture.swift */; };
+		B0331911211E6326BDD46506607A6BB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B25B8EC5996AF143DE9548D1E97EBB2F /* Pods-AVKitDemoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EE7DFC38A1DC9CF173A217C75C73EBD /* Pods-AVKitDemoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7184E84C3E30C2BB26284A7C6688665 /* AKAudioUnitCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D67AE01A2AD8C6DAB6725889715142 /* AKAudioUnitCapture.swift */; };
+		D020E3E09EEB628EB632185AE74945C4 /* Pods-AVKitDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2A08323D7506C5FFAEE9CCE7E13700 /* Pods-AVKitDemoTests-dummy.m */; };
+		DE64ED33B743CC22D5D8F9C6D92769CA /* AKAudioCaptureSessionWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6986E4C4B100A05B7632B7849689984 /* AKAudioCaptureSessionWriter.swift */; };
+		FA1D94B65F2B609CE6E01C35D6CE2BCB /* AKAudioCaptureRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCB25E909EF27333F7669FD04B70E4C /* AKAudioCaptureRecorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A9ED122F193AB4A0FE86DBC1981F4076 /* PBXContainerItemProxy */ = {
+		0564B2000335EC257ED8CD7760124FA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A84F5E7ECD5F7D89663BE140D08820D0;
-			remoteInfo = AVKit;
+			remoteGlobalIDString = F7742B66DB03D24E32E6B92465827F6C;
+			remoteInfo = LYAVKit;
+		};
+		23C3CFA32949F8BD0CA9B77179458D27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7742B66DB03D24E32E6B92465827F6C;
+			remoteInfo = LYAVKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		083F948453D6A9C4B2402BEB8EEB76BE /* DefaultRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultRecorder.swift; sourceTree = "<group>"; };
-		12604BB64BDFD6B91BC5E5E3DB4FCA78 /* Pods-AVKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AVKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		1557C75720943269A032A4345FBF9F69 /* Pods-AVKitDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AVKitDemo-frameworks.sh"; sourceTree = "<group>"; };
-		23C2BC7DC0DD070E54BF9ADAD7227A05 /* AKAudioCaptureRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AKAudioCaptureRecorder.swift; sourceTree = "<group>"; };
-		27996463A81005AB0ADE73BEC739CFC6 /* Pods-AVKitDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AVKitDemo-Info.plist"; sourceTree = "<group>"; };
-		304EB1A9C4876D6944D7A47BC7149163 /* AVKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AVKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		30CEE5BA0101C5CF30BFDD8916B8C1BF /* ThreadSafeArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThreadSafeArray.swift; path = AVKit/Uitily/ThreadSafeArray.swift; sourceTree = "<group>"; };
-		3738C92D32B497417664B2A23D8D465B /* AKRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AKRecorder.swift; sourceTree = "<group>"; };
-		3F82C0011D83E523223C608DF65820D5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		41A142F9913682ABDD39692B72557C15 /* AKAudioProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AKAudioProtocols.swift; sourceTree = "<group>"; };
-		440E3146E5A579F6055109FBB7E9A2F7 /* AVKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AVKit-Info.plist"; sourceTree = "<group>"; };
-		445738DB294FC17FC75CAE3B9B13574E /* Pods-AVKitDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AVKitDemo-umbrella.h"; sourceTree = "<group>"; };
-		50C9DCF1C6D0E6D23436405ABA022F7A /* Pods-AVKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AVKitDemo.release.xcconfig"; sourceTree = "<group>"; };
-		5456646AA6CCD445129571C162B4D051 /* AKAudioCapture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AKAudioCapture.swift; sourceTree = "<group>"; };
-		5C79A3BBE4C602DAD21538EEAC6D6215 /* AVKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AVKit.debug.xcconfig; sourceTree = "<group>"; };
-		604BD6754744D86C58AC6E123308E860 /* AVKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AVKit.framework; path = AVKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		123FDF6DE8F481B454FB7B0FCC263956 /* AKAudioProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AKAudioProtocols.swift; sourceTree = "<group>"; };
+		18C28C197A570CFDB96CFE2D78D7722B /* Pods-AVKitDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AVKitDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1A2A08323D7506C5FFAEE9CCE7E13700 /* Pods-AVKitDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AVKitDemoTests-dummy.m"; sourceTree = "<group>"; };
+		21496EBA0B28AB66A22FCBC365A5274B /* Pods-AVKitDemoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AVKitDemoTests-frameworks.sh"; sourceTree = "<group>"; };
+		2E6F33A05D4B6EDEC07C002BF0436D63 /* Pods-AVKitDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AVKitDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2FBC7CADC9053B67ADA13259BE92DCB1 /* Pods-AVKitDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AVKitDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3E5C2B9DBA72A7DDDD032F23D45B5F6D /* LYAVKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LYAVKit-dummy.m"; sourceTree = "<group>"; };
+		473A4501EC5318F7111F85740C6263CE /* Pods-AVKitDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AVKitDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		48A6FE89F3275ACDE13A7D718821FD72 /* Pods-AVKitDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AVKitDemo-Info.plist"; sourceTree = "<group>"; };
+		492B91EDB22D1A0EE6CB8338EFFBC327 /* Pods-AVKitDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AVKitDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4E3390377EAB447BEDD51AC2C5613F51 /* LYAVKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LYAVKit-Info.plist"; sourceTree = "<group>"; };
+		60CB2926B2C16CB8FB72C846815966F8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		674483765F677D809EEE6751E7E367D2 /* Pods_AVKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AVKitDemo.framework; path = "Pods-AVKitDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D71A598B6970E8395B3E6DC58343658 /* LYAVKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LYAVKit.framework; path = LYAVKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EE7DFC38A1DC9CF173A217C75C73EBD /* Pods-AVKitDemoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AVKitDemoTests-umbrella.h"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		77E5EE7DB6D846EA4971B1DE88A893B7 /* AKAudioUnitCapture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AKAudioUnitCapture.swift; sourceTree = "<group>"; };
-		828837147960B6F8F772E7D557760640 /* AVKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AVKit.modulemap; sourceTree = "<group>"; };
-		8DCAB918E089EBB3A18840AADBA66F9E /* AVKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AVKit.release.xcconfig; sourceTree = "<group>"; };
+		80E0F29417A3D52D32D290AEAEA5E431 /* Pods-AVKitDemoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AVKitDemoTests.modulemap"; sourceTree = "<group>"; };
+		816EFF4D69368A8686771E4CCD5F7F1D /* LYAVKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LYAVKit.modulemap; sourceTree = "<group>"; };
+		8E04A4DA80FF67D8846D0D11202E0925 /* LYAVKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LYAVKit-umbrella.h"; sourceTree = "<group>"; };
+		99349D6FD4DFA63247D8B1DEA18369B0 /* Pods-AVKitDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AVKitDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A53F3B9CDE063D8553485F5E6D63E0A5 /* AVKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AVKit-dummy.m"; sourceTree = "<group>"; };
-		A8A5D9E3ABBA04FB2FA72E815E765B47 /* AVKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AVKit-umbrella.h"; sourceTree = "<group>"; };
-		B5CB33E1FAD2A2DCEEEE1E9928A92F9E /* Pods-AVKitDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AVKitDemo-dummy.m"; sourceTree = "<group>"; };
-		B660AA826014AAF599E2FD521DEE08FA /* AKAudioCaptureSessionWriter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AKAudioCaptureSessionWriter.swift; sourceTree = "<group>"; };
-		BCEFB5079195EB0CB245CAEE40F2FEB6 /* AVKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AVKit-prefix.pch"; sourceTree = "<group>"; };
-		CB641748F013566E354B378694AB7330 /* Pods-AVKitDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AVKitDemo.modulemap"; sourceTree = "<group>"; };
-		E6213BB8A7BFB093197E5584B76841E2 /* Pods-AVKitDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AVKitDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E85C49D1694F9593161CC500F8F37287 /* Pods-AVKitDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AVKitDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		9F03501AACA88D39BCCE50AEB97EF659 /* LYAVKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LYAVKit.debug.xcconfig; sourceTree = "<group>"; };
+		A0D67AE01A2AD8C6DAB6725889715142 /* AKAudioUnitCapture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AKAudioUnitCapture.swift; sourceTree = "<group>"; };
+		A24ED68849C71EC5A8CDD59CDA649D99 /* AKRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AKRecorder.swift; sourceTree = "<group>"; };
+		B0755686EC2ACE520F914132D691327A /* Pods-AVKitDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AVKitDemo-umbrella.h"; sourceTree = "<group>"; };
+		BA552E14F6EC071BC922CC7E27A93104 /* Pods-AVKitDemoTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AVKitDemoTests-Info.plist"; sourceTree = "<group>"; };
+		C0DAF40FEDC33DD2B182A134ED81BF86 /* Pods_AVKitDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AVKitDemoTests.framework; path = "Pods-AVKitDemoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C67B645CB5410634F8F5E977A2E73B91 /* AKAudioCapture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AKAudioCapture.swift; sourceTree = "<group>"; };
+		CD1B086FD3EE3A041890D3948626222D /* ThreadSafeArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThreadSafeArray.swift; path = LYAVKit/Uitily/ThreadSafeArray.swift; sourceTree = "<group>"; };
+		DD76CF631592401FD00A3FA014D65DA8 /* DefaultRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultRecorder.swift; sourceTree = "<group>"; };
+		DE14AFAEED22CEEDC7098B918891ED47 /* Pods-AVKitDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AVKitDemo-dummy.m"; sourceTree = "<group>"; };
+		DFDA1411BE5FA2B9BA328839E7A0EE09 /* LYAVKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LYAVKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E0750FA1E11E39C3948C91B31DB1F53F /* Pods-AVKitDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AVKitDemo.modulemap"; sourceTree = "<group>"; };
+		E583B9156A1D5A39184B627A3FE218A4 /* Pods-AVKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AVKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E8F073EC60EC2561B9BC9F2071243871 /* Pods-AVKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AVKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		EB4C83277B3621602415200E2D93BE49 /* LYAVKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LYAVKit-prefix.pch"; sourceTree = "<group>"; };
+		F2F96E79D809E3AC0ED8E69CDA43257D /* Pods-AVKitDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AVKitDemo-frameworks.sh"; sourceTree = "<group>"; };
+		F6986E4C4B100A05B7632B7849689984 /* AKAudioCaptureSessionWriter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AKAudioCaptureSessionWriter.swift; sourceTree = "<group>"; };
+		F9648A607E783E92573A7ED5357E1DF9 /* LYAVKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LYAVKit.release.xcconfig; sourceTree = "<group>"; };
+		FCCB25E909EF27333F7669FD04B70E4C /* AKAudioCaptureRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AKAudioCaptureRecorder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1FC48147B55BEC895938032045B5C6F0 /* Frameworks */ = {
+		491CE586425C73196D6945AE17B1DCEB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				332FF4CE0CD169EBD1695AE87748F81F /* Foundation.framework in Frameworks */,
+				561D951DF51452E4C30FD40A707DD2C4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7CF8CDF77F5F09EE6FA981284FF6DB6F /* Frameworks */ = {
+		97DE644DAED9FA2761916A1B417C918E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B8CEC6BBFA421989B6CAF2F434FBC72 /* Foundation.framework in Frameworks */,
+				B0331911211E6326BDD46506607A6BB3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F912958BD918398893321E5CD9407740 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8727C3F13BE0D5A2C1FEFD8051C5F5CB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0982BA399932F3A64C602E4DD377BDD5 /* Targets Support Files */ = {
+		3E45474D78378CA9B29496F6C1D7A7B7 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C6B6D2447074F5813707EF014F7A50C1 /* Pods-AVKitDemo */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		2ACC8D56AF04B72B983B4BFAFAACA842 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				828837147960B6F8F772E7D557760640 /* AVKit.modulemap */,
-				A53F3B9CDE063D8553485F5E6D63E0A5 /* AVKit-dummy.m */,
-				440E3146E5A579F6055109FBB7E9A2F7 /* AVKit-Info.plist */,
-				BCEFB5079195EB0CB245CAEE40F2FEB6 /* AVKit-prefix.pch */,
-				A8A5D9E3ABBA04FB2FA72E815E765B47 /* AVKit-umbrella.h */,
-				5C79A3BBE4C602DAD21538EEAC6D6215 /* AVKit.debug.xcconfig */,
-				8DCAB918E089EBB3A18840AADBA66F9E /* AVKit.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/AVKitDemo/Pods/Target Support Files/AVKit";
-			sourceTree = "<group>";
-		};
-		3D06554C233684E6FFDF62C6EA0BB998 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				59CC58CD04FE432007C3B0FF9EAEEFE9 /* AVKit */,
+				92C2B4D3E249ECC8DE5E90CAEDF128A3 /* LYAVKit */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		4584C70667321D042E37A41BF35D1697 /* Uitily */ = {
+		4664712F74FD735094704F3C7134589F /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				30CEE5BA0101C5CF30BFDD8916B8C1BF /* ThreadSafeArray.swift */,
+				DD2898218189A0EDEFB7646605730AB7 /* capture */,
+				4CE9D7647351E345FBD35FCABF240B5B /* protocols */,
+				6AB01D0F3ABEF3E8A9213F0122B838E5 /* Recorder */,
+				F1E2DA1E009554BAB69204159191C1C7 /* write */,
 			);
-			name = Uitily;
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		4CE9D7647351E345FBD35FCABF240B5B /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				123FDF6DE8F481B454FB7B0FCC263956 /* AKAudioProtocols.swift */,
+			);
+			name = protocols;
+			path = LYAVKit/Audio/protocols;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -133,102 +150,113 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		59CC58CD04FE432007C3B0FF9EAEEFE9 /* AVKit */ = {
+		69569C68BDADF0E27E2A26B841427F3F /* Uitily */ = {
 			isa = PBXGroup;
 			children = (
-				99563A7E80B18C760675568706BEDA2A /* Audio */,
-				92E78AB86381CA3ADCA431D8259D052E /* Pod */,
-				2ACC8D56AF04B72B983B4BFAFAACA842 /* Support Files */,
-				4584C70667321D042E37A41BF35D1697 /* Uitily */,
+				CD1B086FD3EE3A041890D3948626222D /* ThreadSafeArray.swift */,
 			);
-			name = AVKit;
-			path = ../../..;
+			name = Uitily;
 			sourceTree = "<group>";
 		};
-		5ACD6EFF9A8092E1ACE0D127F0D02A38 /* capture */ = {
+		6AB01D0F3ABEF3E8A9213F0122B838E5 /* Recorder */ = {
 			isa = PBXGroup;
 			children = (
-				5456646AA6CCD445129571C162B4D051 /* AKAudioCapture.swift */,
-				77E5EE7DB6D846EA4971B1DE88A893B7 /* AKAudioUnitCapture.swift */,
-			);
-			name = capture;
-			path = AVKit/Audio/capture;
-			sourceTree = "<group>";
-		};
-		8176D231421B13C2AA5D4E34DED2088B /* Recorder */ = {
-			isa = PBXGroup;
-			children = (
-				23C2BC7DC0DD070E54BF9ADAD7227A05 /* AKAudioCaptureRecorder.swift */,
-				3738C92D32B497417664B2A23D8D465B /* AKRecorder.swift */,
-				083F948453D6A9C4B2402BEB8EEB76BE /* DefaultRecorder.swift */,
+				FCCB25E909EF27333F7669FD04B70E4C /* AKAudioCaptureRecorder.swift */,
+				A24ED68849C71EC5A8CDD59CDA649D99 /* AKRecorder.swift */,
+				DD76CF631592401FD00A3FA014D65DA8 /* DefaultRecorder.swift */,
 			);
 			name = Recorder;
-			path = AVKit/Audio/Recorder;
+			path = LYAVKit/Audio/Recorder;
 			sourceTree = "<group>";
 		};
-		92E78AB86381CA3ADCA431D8259D052E /* Pod */ = {
+		6BB3F947A944D30B1784BBE31373C1EA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				304EB1A9C4876D6944D7A47BC7149163 /* AVKit.podspec */,
-				3F82C0011D83E523223C608DF65820D5 /* README.md */,
+				816EFF4D69368A8686771E4CCD5F7F1D /* LYAVKit.modulemap */,
+				3E5C2B9DBA72A7DDDD032F23D45B5F6D /* LYAVKit-dummy.m */,
+				4E3390377EAB447BEDD51AC2C5613F51 /* LYAVKit-Info.plist */,
+				EB4C83277B3621602415200E2D93BE49 /* LYAVKit-prefix.pch */,
+				8E04A4DA80FF67D8846D0D11202E0925 /* LYAVKit-umbrella.h */,
+				9F03501AACA88D39BCCE50AEB97EF659 /* LYAVKit.debug.xcconfig */,
+				F9648A607E783E92573A7ED5357E1DF9 /* LYAVKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/AVKitDemo/Pods/Target Support Files/LYAVKit";
+			sourceTree = "<group>";
+		};
+		6D8C2D19BC03343F7AA1136A6D68D97C /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				DFDA1411BE5FA2B9BA328839E7A0EE09 /* LYAVKit.podspec */,
+				60CB2926B2C16CB8FB72C846815966F8 /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		98427CFD6F76C4E1BA00B18B2C7B839A /* Products */ = {
+		92C2B4D3E249ECC8DE5E90CAEDF128A3 /* LYAVKit */ = {
 			isa = PBXGroup;
 			children = (
-				604BD6754744D86C58AC6E123308E860 /* AVKit.framework */,
+				4664712F74FD735094704F3C7134589F /* Audio */,
+				6D8C2D19BC03343F7AA1136A6D68D97C /* Pod */,
+				6BB3F947A944D30B1784BBE31373C1EA /* Support Files */,
+				69569C68BDADF0E27E2A26B841427F3F /* Uitily */,
+			);
+			name = LYAVKit;
+			path = ../../..;
+			sourceTree = "<group>";
+		};
+		956F9E21BC2E5AF4024806D17C58A7D8 /* Pods-AVKitDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				80E0F29417A3D52D32D290AEAEA5E431 /* Pods-AVKitDemoTests.modulemap */,
+				18C28C197A570CFDB96CFE2D78D7722B /* Pods-AVKitDemoTests-acknowledgements.markdown */,
+				2FBC7CADC9053B67ADA13259BE92DCB1 /* Pods-AVKitDemoTests-acknowledgements.plist */,
+				1A2A08323D7506C5FFAEE9CCE7E13700 /* Pods-AVKitDemoTests-dummy.m */,
+				21496EBA0B28AB66A22FCBC365A5274B /* Pods-AVKitDemoTests-frameworks.sh */,
+				BA552E14F6EC071BC922CC7E27A93104 /* Pods-AVKitDemoTests-Info.plist */,
+				6EE7DFC38A1DC9CF173A217C75C73EBD /* Pods-AVKitDemoTests-umbrella.h */,
+				2E6F33A05D4B6EDEC07C002BF0436D63 /* Pods-AVKitDemoTests.debug.xcconfig */,
+				99349D6FD4DFA63247D8B1DEA18369B0 /* Pods-AVKitDemoTests.release.xcconfig */,
+			);
+			name = "Pods-AVKitDemoTests";
+			path = "Target Support Files/Pods-AVKitDemoTests";
+			sourceTree = "<group>";
+		};
+		A54D32A1B3830CDD5936251BD93B617E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D71A598B6970E8395B3E6DC58343658 /* LYAVKit.framework */,
 				674483765F677D809EEE6751E7E367D2 /* Pods_AVKitDemo.framework */,
+				C0DAF40FEDC33DD2B182A134ED81BF86 /* Pods_AVKitDemoTests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		99563A7E80B18C760675568706BEDA2A /* Audio */ = {
+		BF80CD95A94C5F0A7819387C7BE60C67 /* Pods-AVKitDemo */ = {
 			isa = PBXGroup;
 			children = (
-				5ACD6EFF9A8092E1ACE0D127F0D02A38 /* capture */,
-				CCA6622F08CC7481062E1BFC609FFE1F /* protocols */,
-				8176D231421B13C2AA5D4E34DED2088B /* Recorder */,
-				F02A18694BCE4C618FBFB55EC5126E99 /* write */,
-			);
-			name = Audio;
-			sourceTree = "<group>";
-		};
-		C6B6D2447074F5813707EF014F7A50C1 /* Pods-AVKitDemo */ = {
-			isa = PBXGroup;
-			children = (
-				CB641748F013566E354B378694AB7330 /* Pods-AVKitDemo.modulemap */,
-				E6213BB8A7BFB093197E5584B76841E2 /* Pods-AVKitDemo-acknowledgements.markdown */,
-				E85C49D1694F9593161CC500F8F37287 /* Pods-AVKitDemo-acknowledgements.plist */,
-				B5CB33E1FAD2A2DCEEEE1E9928A92F9E /* Pods-AVKitDemo-dummy.m */,
-				1557C75720943269A032A4345FBF9F69 /* Pods-AVKitDemo-frameworks.sh */,
-				27996463A81005AB0ADE73BEC739CFC6 /* Pods-AVKitDemo-Info.plist */,
-				445738DB294FC17FC75CAE3B9B13574E /* Pods-AVKitDemo-umbrella.h */,
-				12604BB64BDFD6B91BC5E5E3DB4FCA78 /* Pods-AVKitDemo.debug.xcconfig */,
-				50C9DCF1C6D0E6D23436405ABA022F7A /* Pods-AVKitDemo.release.xcconfig */,
+				E0750FA1E11E39C3948C91B31DB1F53F /* Pods-AVKitDemo.modulemap */,
+				492B91EDB22D1A0EE6CB8338EFFBC327 /* Pods-AVKitDemo-acknowledgements.markdown */,
+				473A4501EC5318F7111F85740C6263CE /* Pods-AVKitDemo-acknowledgements.plist */,
+				DE14AFAEED22CEEDC7098B918891ED47 /* Pods-AVKitDemo-dummy.m */,
+				F2F96E79D809E3AC0ED8E69CDA43257D /* Pods-AVKitDemo-frameworks.sh */,
+				48A6FE89F3275ACDE13A7D718821FD72 /* Pods-AVKitDemo-Info.plist */,
+				B0755686EC2ACE520F914132D691327A /* Pods-AVKitDemo-umbrella.h */,
+				E583B9156A1D5A39184B627A3FE218A4 /* Pods-AVKitDemo.debug.xcconfig */,
+				E8F073EC60EC2561B9BC9F2071243871 /* Pods-AVKitDemo.release.xcconfig */,
 			);
 			name = "Pods-AVKitDemo";
 			path = "Target Support Files/Pods-AVKitDemo";
-			sourceTree = "<group>";
-		};
-		CCA6622F08CC7481062E1BFC609FFE1F /* protocols */ = {
-			isa = PBXGroup;
-			children = (
-				41A142F9913682ABDD39692B72557C15 /* AKAudioProtocols.swift */,
-			);
-			name = protocols;
-			path = AVKit/Audio/protocols;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				3D06554C233684E6FFDF62C6EA0BB998 /* Development Pods */,
+				3E45474D78378CA9B29496F6C1D7A7B7 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				98427CFD6F76C4E1BA00B18B2C7B839A /* Products */,
-				0982BA399932F3A64C602E4DD377BDD5 /* Targets Support Files */,
+				A54D32A1B3830CDD5936251BD93B617E /* Products */,
+				E92BA757E51FD7959B7575B6A4735EFB /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -240,72 +268,118 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F02A18694BCE4C618FBFB55EC5126E99 /* write */ = {
+		DD2898218189A0EDEFB7646605730AB7 /* capture */ = {
 			isa = PBXGroup;
 			children = (
-				B660AA826014AAF599E2FD521DEE08FA /* AKAudioCaptureSessionWriter.swift */,
+				C67B645CB5410634F8F5E977A2E73B91 /* AKAudioCapture.swift */,
+				A0D67AE01A2AD8C6DAB6725889715142 /* AKAudioUnitCapture.swift */,
+			);
+			name = capture;
+			path = LYAVKit/Audio/capture;
+			sourceTree = "<group>";
+		};
+		E92BA757E51FD7959B7575B6A4735EFB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF80CD95A94C5F0A7819387C7BE60C67 /* Pods-AVKitDemo */,
+				956F9E21BC2E5AF4024806D17C58A7D8 /* Pods-AVKitDemoTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F1E2DA1E009554BAB69204159191C1C7 /* write */ = {
+			isa = PBXGroup;
+			children = (
+				F6986E4C4B100A05B7632B7849689984 /* AKAudioCaptureSessionWriter.swift */,
 			);
 			name = write;
-			path = AVKit/Audio/write;
+			path = LYAVKit/Audio/write;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		634C7EB7F0958967FCF70EE1D5CA387C /* Headers */ = {
+		208F62BF8A449CE403D8CC1311991D19 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B9F36F5380099F5FDA8327058086FB5 /* Pods-AVKitDemo-umbrella.h in Headers */,
+				B25B8EC5996AF143DE9548D1E97EBB2F /* Pods-AVKitDemoTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC2E92281D48881A97246B0C847968F9 /* Headers */ = {
+		85F0103E8ADCEDE4EDDFDA885F453864 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D97CA686131668C50C34219B6DAAE05 /* AVKit-umbrella.h in Headers */,
+				6C5D3CE94D72CA2D31EC8E408DFA52DD /* Pods-AVKitDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EADD84E53A7F49736BBCE71ACCDC4959 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3C6C4E38121B08C7F1145CF7A298134 /* LYAVKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A84F5E7ECD5F7D89663BE140D08820D0 /* AVKit */ = {
+		872D95335A7BCA03FA536E399C9CE47E /* Pods-AVKitDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 81D6F6C3922ED62DDF85D1AAD89D96F6 /* Build configuration list for PBXNativeTarget "AVKit" */;
+			buildConfigurationList = 271503E7779D88B09F4359CCBAD9B6CF /* Build configuration list for PBXNativeTarget "Pods-AVKitDemoTests" */;
 			buildPhases = (
-				DC2E92281D48881A97246B0C847968F9 /* Headers */,
-				2CB56AE17D4DD4884B61863C86B978A5 /* Sources */,
-				7CF8CDF77F5F09EE6FA981284FF6DB6F /* Frameworks */,
-				3C0DEC758ADA9694C2DE15C185E9C425 /* Resources */,
+				208F62BF8A449CE403D8CC1311991D19 /* Headers */,
+				62A5C05D4D3A370C7207FC46D49E9265 /* Sources */,
+				F912958BD918398893321E5CD9407740 /* Frameworks */,
+				B063A8F46EA11B16A38BF62EF6223E80 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				05BC2023EC83B8C70802EF374153C14F /* PBXTargetDependency */,
 			);
-			name = AVKit;
-			productName = AVKit;
-			productReference = 604BD6754744D86C58AC6E123308E860 /* AVKit.framework */;
+			name = "Pods-AVKitDemoTests";
+			productName = "Pods-AVKitDemoTests";
+			productReference = C0DAF40FEDC33DD2B182A134ED81BF86 /* Pods_AVKitDemoTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C995FE1DC3DF1AB67953C30E12246EF2 /* Pods-AVKitDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8826E3B86C400F7981CBD63BDFC81192 /* Build configuration list for PBXNativeTarget "Pods-AVKitDemo" */;
+			buildConfigurationList = ECA391D9B9B9782E5317893027168D18 /* Build configuration list for PBXNativeTarget "Pods-AVKitDemo" */;
 			buildPhases = (
-				634C7EB7F0958967FCF70EE1D5CA387C /* Headers */,
-				DC3FA70C80D442BE7BAB3235A6B10BC7 /* Sources */,
-				1FC48147B55BEC895938032045B5C6F0 /* Frameworks */,
-				1D56151428F7C0F00215BB9CC7A5F5FD /* Resources */,
+				85F0103E8ADCEDE4EDDFDA885F453864 /* Headers */,
+				BD1DBEA705E12801FB361BD1BCBC9A15 /* Sources */,
+				491CE586425C73196D6945AE17B1DCEB /* Frameworks */,
+				042CD7F886924494257A3940FA63EE3D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				89EAFB0B89DEF138712FE260C2CD64E6 /* PBXTargetDependency */,
+				8C943081527E4BA5CEF6837EB0B629B9 /* PBXTargetDependency */,
 			);
 			name = "Pods-AVKitDemo";
 			productName = "Pods-AVKitDemo";
 			productReference = 674483765F677D809EEE6751E7E367D2 /* Pods_AVKitDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F7742B66DB03D24E32E6B92465827F6C /* LYAVKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECC9ECBBC13C37BC83ECD568ACB71229 /* Build configuration list for PBXNativeTarget "LYAVKit" */;
+			buildPhases = (
+				EADD84E53A7F49736BBCE71ACCDC4959 /* Headers */,
+				432FCEC37A39610B64826DD8293DC57B /* Sources */,
+				97DE644DAED9FA2761916A1B417C918E /* Frameworks */,
+				A417BBF8BF7D245B687B09B5D823E665 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LYAVKit;
+			productName = LYAVKit;
+			productReference = 6D71A598B6970E8395B3E6DC58343658 /* LYAVKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -318,7 +392,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -326,25 +400,33 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 98427CFD6F76C4E1BA00B18B2C7B839A /* Products */;
+			productRefGroup = A54D32A1B3830CDD5936251BD93B617E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A84F5E7ECD5F7D89663BE140D08820D0 /* AVKit */,
+				F7742B66DB03D24E32E6B92465827F6C /* LYAVKit */,
 				C995FE1DC3DF1AB67953C30E12246EF2 /* Pods-AVKitDemo */,
+				872D95335A7BCA03FA536E399C9CE47E /* Pods-AVKitDemoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1D56151428F7C0F00215BB9CC7A5F5FD /* Resources */ = {
+		042CD7F886924494257A3940FA63EE3D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3C0DEC758ADA9694C2DE15C185E9C425 /* Resources */ = {
+		A417BBF8BF7D245B687B09B5D823E665 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B063A8F46EA11B16A38BF62EF6223E80 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -354,45 +436,97 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2CB56AE17D4DD4884B61863C86B978A5 /* Sources */ = {
+		432FCEC37A39610B64826DD8293DC57B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3B462AFAE562037892DD4BF4245C98F /* AKAudioCapture.swift in Sources */,
-				032B60C2675F7297770972681BE4A881 /* AKAudioCaptureRecorder.swift in Sources */,
-				27408B81060019A50C8108AC992668A7 /* AKAudioCaptureSessionWriter.swift in Sources */,
-				315BDC9751D4F0CAD854A11980389049 /* AKAudioProtocols.swift in Sources */,
-				1BCB66F00C2072F13CE92E4E71716DDD /* AKAudioUnitCapture.swift in Sources */,
-				E35D63C80971D42E68C78859A16CFC98 /* AKRecorder.swift in Sources */,
-				9742462A25045832EAD9E92F64E68B10 /* AVKit-dummy.m in Sources */,
-				9941F3868E8D6F55FE9ABD43449ABDB4 /* DefaultRecorder.swift in Sources */,
-				BA6A3FBF685508224986C546677D6D87 /* ThreadSafeArray.swift in Sources */,
+				A444164587BBD679604E9019A55F6CFC /* AKAudioCapture.swift in Sources */,
+				FA1D94B65F2B609CE6E01C35D6CE2BCB /* AKAudioCaptureRecorder.swift in Sources */,
+				DE64ED33B743CC22D5D8F9C6D92769CA /* AKAudioCaptureSessionWriter.swift in Sources */,
+				387F604612AA4C47AC7B286536DF2DBC /* AKAudioProtocols.swift in Sources */,
+				B7184E84C3E30C2BB26284A7C6688665 /* AKAudioUnitCapture.swift in Sources */,
+				7181CFA951CC6E38296F8267C1233274 /* AKRecorder.swift in Sources */,
+				3895203D5CF4241B7D6EC45E3518CDBE /* DefaultRecorder.swift in Sources */,
+				3282184A588B45668BC67595062D52F0 /* LYAVKit-dummy.m in Sources */,
+				7F007E15387D4A2EEDA5800540F664F3 /* ThreadSafeArray.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC3FA70C80D442BE7BAB3235A6B10BC7 /* Sources */ = {
+		62A5C05D4D3A370C7207FC46D49E9265 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EEE878FEC7CD922D7BD75D93A6221ED /* Pods-AVKitDemo-dummy.m in Sources */,
+				D020E3E09EEB628EB632185AE74945C4 /* Pods-AVKitDemoTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD1DBEA705E12801FB361BD1BCBC9A15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				693CD5CD18A6E1D0E68E2A2D96F7F54C /* Pods-AVKitDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		89EAFB0B89DEF138712FE260C2CD64E6 /* PBXTargetDependency */ = {
+		05BC2023EC83B8C70802EF374153C14F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = AVKit;
-			target = A84F5E7ECD5F7D89663BE140D08820D0 /* AVKit */;
-			targetProxy = A9ED122F193AB4A0FE86DBC1981F4076 /* PBXContainerItemProxy */;
+			name = LYAVKit;
+			target = F7742B66DB03D24E32E6B92465827F6C /* LYAVKit */;
+			targetProxy = 23C3CFA32949F8BD0CA9B77179458D27 /* PBXContainerItemProxy */;
+		};
+		8C943081527E4BA5CEF6837EB0B629B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LYAVKit;
+			target = F7742B66DB03D24E32E6B92465827F6C /* LYAVKit */;
+			targetProxy = 0564B2000335EC257ED8CD7760124FA8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		5B58F0688B1E07B09491291A5935C95A /* Debug */ = {
+		2200EA7580F50F26D50C6F63B637A486 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12604BB64BDFD6B91BC5E5E3DB4FCA78 /* Pods-AVKitDemo.debug.xcconfig */;
+			baseConfigurationReference = 99349D6FD4DFA63247D8B1DEA18369B0 /* Pods-AVKitDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AVKitDemoTests/Pods-AVKitDemoTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AVKitDemoTests/Pods-AVKitDemoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		63AC00692C77AC56D691F60DC916D56A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E583B9156A1D5A39184B627A3FE218A4 /* Pods-AVKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -427,9 +561,9 @@
 			};
 			name = Debug;
 		};
-		89ED634793943F898C925D0751A194F2 /* Debug */ = {
+		80D8BBA96A605BF5702A864622173BF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C79A3BBE4C602DAD21538EEAC6D6215 /* AVKit.debug.xcconfig */;
+			baseConfigurationReference = 9F03501AACA88D39BCCE50AEB97EF659 /* LYAVKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -440,8 +574,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AVKit/AVKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AVKit/AVKit-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/LYAVKit/LYAVKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LYAVKit/LYAVKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -449,13 +583,50 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/AVKit/AVKit.modulemap";
-				PRODUCT_MODULE_NAME = AVKit;
-				PRODUCT_NAME = AVKit;
+				MODULEMAP_FILE = "Target Support Files/LYAVKit/LYAVKit.modulemap";
+				PRODUCT_MODULE_NAME = LYAVKit;
+				PRODUCT_NAME = LYAVKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B6298AA99A99D693742BE52A0758D21D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E6F33A05D4B6EDEC07C002BF0436D63 /* Pods-AVKitDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AVKitDemoTests/Pods-AVKitDemoTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AVKitDemoTests/Pods-AVKitDemoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -590,9 +761,9 @@
 			};
 			name = Release;
 		};
-		FAD592D1D19E049C855B9358A250047A /* Release */ = {
+		D62C1B80703110C887D3C70BCAF5111A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50C9DCF1C6D0E6D23436405ABA022F7A /* Pods-AVKitDemo.release.xcconfig */;
+			baseConfigurationReference = E8F073EC60EC2561B9BC9F2071243871 /* Pods-AVKitDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -628,9 +799,9 @@
 			};
 			name = Release;
 		};
-		FB6A24E598C4E880F69CF3A1F2D73FCD /* Release */ = {
+		F685BE1E8A0DE62A5C705563B007FBBB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DCAB918E089EBB3A18840AADBA66F9E /* AVKit.release.xcconfig */;
+			baseConfigurationReference = F9648A607E783E92573A7ED5357E1DF9 /* LYAVKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -641,8 +812,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AVKit/AVKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AVKit/AVKit-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/LYAVKit/LYAVKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LYAVKit/LYAVKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -650,9 +821,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/AVKit/AVKit.modulemap";
-				PRODUCT_MODULE_NAME = AVKit;
-				PRODUCT_NAME = AVKit;
+				MODULEMAP_FILE = "Target Support Files/LYAVKit/LYAVKit.modulemap";
+				PRODUCT_MODULE_NAME = LYAVKit;
+				PRODUCT_NAME = LYAVKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -667,6 +838,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		271503E7779D88B09F4359CCBAD9B6CF /* Build configuration list for PBXNativeTarget "Pods-AVKitDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6298AA99A99D693742BE52A0758D21D /* Debug */,
+				2200EA7580F50F26D50C6F63B637A486 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -676,20 +856,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		81D6F6C3922ED62DDF85D1AAD89D96F6 /* Build configuration list for PBXNativeTarget "AVKit" */ = {
+		ECA391D9B9B9782E5317893027168D18 /* Build configuration list for PBXNativeTarget "Pods-AVKitDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				89ED634793943F898C925D0751A194F2 /* Debug */,
-				FB6A24E598C4E880F69CF3A1F2D73FCD /* Release */,
+				63AC00692C77AC56D691F60DC916D56A /* Debug */,
+				D62C1B80703110C887D3C70BCAF5111A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8826E3B86C400F7981CBD63BDFC81192 /* Build configuration list for PBXNativeTarget "Pods-AVKitDemo" */ = {
+		ECC9ECBBC13C37BC83ECD568ACB71229 /* Build configuration list for PBXNativeTarget "LYAVKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5B58F0688B1E07B09491291A5935C95A /* Debug */,
-				FAD592D1D19E049C855B9358A250047A /* Release */,
+				80D8BBA96A605BF5702A864622173BF4 /* Debug */,
+				F685BE1E8A0DE62A5C705563B007FBBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

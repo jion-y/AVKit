@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double AVKitVersionNumber;
-FOUNDATION_EXPORT const unsigned char AVKitVersionString[];
+FOUNDATION_EXPORT double Pods_AVKitDemoTestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_AVKitDemoTestsVersionString[];
 
