@@ -6,12 +6,9 @@
 //
 
 import Foundation
-public class WeakProxy<T> where T:AnyObject {
-    public weak var weakObj:AnyObject?
-    init(_ obj:T) {
-        self.weakObj = obj
-
+public class WeakProxy<T> where T: AnyObject {
+    public weak var weakObj: AnyObject?
+    init(_ obj: T) {
+        weakObj = obj
     }
-    
-    
 }

@@ -5,12 +5,9 @@
 //  Created by liuming on 2021/8/4.
 //
 
-import Foundation
 import AVFoundation
+import Foundation
 
-public class AKAudioInput:NSObject {
-    
-    func input(sampleBuffer: CMSampleBuffer) {
-        
-    }
+public class AKAudioInput: NSObject {
+    func input(sampleBuffer _: CMSampleBuffer) {}
 }

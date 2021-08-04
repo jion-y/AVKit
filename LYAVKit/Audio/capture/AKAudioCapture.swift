@@ -16,7 +16,6 @@ public class AKAudioCapture: AKAudioOutput {
 
     public var status: AKAudioRecordStatus = .none
     private var hasConfigSession: Bool = false
-   
 }
 
 extension AKAudioCapture: AudioCaptureEanbel {
@@ -72,7 +71,6 @@ extension AKAudioCapture: AudioCaptureEanbel {
 
 extension AKAudioCapture: AVCaptureAudioDataOutputSampleBufferDelegate {
     public func captureOutput(_: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from _: AVCaptureConnection) {
-        self.push(sampleBuffer: sampleBuffer)
+        push(sampleBuffer: sampleBuffer)
     }
 }
-

@@ -54,11 +54,11 @@ public protocol AudioWiterEnable {
     func endWriter()
 }
 
-//public protocol AudioOutputEnable {
+// public protocol AudioOutputEnable {
 //    func addIntputer(inputer: AudioInputEanble)
 //    func push(sampleBuffer: CMSampleBuffer)
-//}
+// }
 //
-//public protocol AudioInputEanble:NSObjectProtocol {
-//   
-//}
+// public protocol AudioInputEanble:NSObjectProtocol {
+//
+// }
