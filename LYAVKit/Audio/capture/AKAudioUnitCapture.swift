@@ -12,13 +12,17 @@ import Foundation
 // MARK: - AKAudioUnitCapture
 
 public class AKAudioUnitCapture: AKAudioOutput {
+    private let inputBus:UInt32 = 1
+    private let outputBus:UInt32 = 0
+    
+    
     private var status_: AKAudioRecordStatus = .none
     private weak var delegate: AudioRecordDelegate?
     private var audioFormat = AKAudioFormat()
     private var audioUnit: AudioComponentInstance?
     private func configAudioUnit() {
         if audioUnit == nil {
-            var sattus: OSStatus = 0
+            var status: OSStatus = 0
             var des = AudioComponentDescription(componentType: kAudioUnitType_Output,
                                                 componentSubType: kAudioUnitSubType_RemoteIO,
                                                 componentManufacturer: 0,
@@ -29,10 +33,24 @@ public class AKAudioUnitCapture: AKAudioOutput {
             guard let input = inputComponent else {
                 return
             }
-            sattus = AudioComponentInstanceNew(input, &audioUnit)
+            status = AudioComponentInstanceNew(input, &audioUnit)
 
-            sattus.debugLog()
-            assert(sattus.checkNoError())
+            status.debugLog()
+            assert(status.checkNoError())
+            
+            //为录制打开io
+            var flag:UInt32 = 1
+            status = AudioUnitSetProperty(self.audioUnit!,
+                                          kAudioOutputUnitProperty_EnableIO,
+                                          kAudioUnitScope_Input,
+                                          inputBus,
+                                          &flag,
+                                          UInt32(MemoryLayout.size(ofValue: flag)))
+            status.debugLog()
+            assert(status.checkNoError())
+            
+            
+            
         }
     }
 }
