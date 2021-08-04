@@ -8,6 +8,8 @@
 import AVFoundation
 import Foundation
 
+// MARK: - AKAudioCaptureRecorder
+
 public class AKAudioCaptureRecorder {
     private var audioPath: String = ""
     private var mutableRecord: Bool = false
@@ -19,6 +21,8 @@ public class AKAudioCaptureRecorder {
     private let audioCapture = AKAudioCapture()
     private let audioWtriter = AKAudioCaptureSessionWriter()
 }
+
+// MARK: AudioRecordEnable
 
 extension AKAudioCaptureRecorder: AudioRecordEnable {
     public var status: AKAudioRecordStatus {
@@ -41,18 +45,25 @@ extension AKAudioCaptureRecorder: AudioRecordEnable {
     }
 
     public func start() {
-        audioCapture.start()
-        audioWtriter.startWriter()
+        if status_ != .recording {
+            status_ = .recording
+            audioCapture.start()
+            audioWtriter.startWriter()
+        }
     }
 
     public func pause() {
-        audioCapture.pause()
-        audioWtriter.pasueWriter()
+        if status_ == .recording {
+            audioCapture.pause()
+            audioWtriter.pasueWriter()
+        }
     }
 
     public func stop() {
-        audioCapture.stop()
-        audioWtriter.endWriter()
+        if status_ == .recording || status_ == .stop {
+            audioCapture.stop()
+            audioWtriter.endWriter()
+        }
     }
 
     public func enableMutaleRecord(enable _: Bool) {}

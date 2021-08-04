@@ -79,7 +79,7 @@ public extension AKAudioFormat {
     }
 }
 
-open enum AKRecorder {
+open class AKRecorder {
     static func getRecoder(type: RecorderType) -> AudioRecordEnable? {
         switch type {
         case .AVRecoder:

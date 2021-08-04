@@ -10,7 +10,7 @@ import Foundation
 
 // MARK: - AKAudioCaptureSessionWriter
 
-public class AKAudioCaptureSessionWriter {
+public class AKAudioCaptureSessionWriter:AKAudioInput{
     private var audioFormat = AKAudioFormat()
     private var audioInput: AVAssetWriterInput?
     private var assetWriter: AVAssetWriter?
@@ -37,6 +37,12 @@ public class AKAudioCaptureSessionWriter {
 
         } catch {
             throw error
+        }
+    }
+    
+    public override func input(sampleBuffer: CMSampleBuffer) {
+        if isWritting {
+            audioInput?.append(sampleBuffer)
         }
     }
 }
@@ -70,15 +76,5 @@ extension AKAudioCaptureSessionWriter: AudioWiterEnable {
 
     public func setAuidoFomart(format: AKAudioFormat) {
         audioFormat = format
-    }
-}
-
-// MARK: AudioInputEanble
-
-extension AKAudioCaptureSessionWriter: AudioInputEanble {
-    public func input(sampleBuffer: CMSampleBuffer) {
-        if isWritting {
-            audioInput?.append(sampleBuffer)
-        }
     }
 }
